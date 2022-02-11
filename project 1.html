@@ -1,0 +1,55 @@
+<html>
+<style>
+  #header{
+      animation-name: ajay;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      color: rgb(0, 0, 0);
+  }
+  @keyframes ajay{
+      form{color: burlywood;}
+      to{color: rgb(255, 255, 255);}
+  }
+</style>
+<body bgcolor="skyblue">
+<fieldset>
+    <legend>
+   <div id="header">Form</div>
+    </legend>
+    <center>
+        <div id="div">
+            <form action="http://localhost:3000/get_datas" method="get">
+    
+            <table>
+                <td>
+                    <th>Fill the Members Details</th>
+                </td>
+                <tr>
+                    <td>Name</td>
+                    <td> : <input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td>Phone No</td>
+                    <td> : <input type="number" name="phone"></td>
+                </tr>
+                <tr>
+                    <td>Email-ID</td>
+                    <td> : <input type="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td>D.O.B</td>
+                    <td> : <input type="date" name="dob"></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td> : <input type="text" name="address"></td>
+                </tr>
+            </table>
+            <input type="submit" value="Submit">
+        </form>
+        </div>
+    </center>
+ </fieldset>
+ 
+</body>
+</html>
